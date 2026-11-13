@@ -30,3 +30,4 @@ jobs:
         with:
           name: EpicPaladins-Mod-Jar
           path: build/libs/*.jar
+          

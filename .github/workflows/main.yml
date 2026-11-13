@@ -1,0 +1,24 @@
+name: Build Fabric Mod
+on: [workflow_dispatch, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - name: Unzip and Build
+        run: |
+          unzip -o EpicPaladins-Fabric-1.21.4-final-stage77_2.zip
+          cd stage57work
+          chmod +x gradlew
+          ./gradlew build
+      - name: Upload Jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: EpicPaladins-Mod
+          path: stage57work/build/libs/*.jar

@@ -11,9 +11,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Unzip and Build
+      - name: List files and Build
         run: |
-          unzip -o EpicPaladins-Fabric-1.21.4-final-stage77_2.zip
+          ls -la
+          unzip -o EpicPaladins-Fabric-*.zip
           cd stage57work
           chmod +x gradlew
           ./gradlew build

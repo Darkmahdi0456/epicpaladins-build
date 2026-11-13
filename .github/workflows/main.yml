@@ -11,17 +11,20 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Extract and Find Gradle
+      - name: Check Zip Contents
         run: |
           unzip -o EpicPaladins-Fabric-*.zip
-          # پیدا کردن خودکار پوشه‌ای که gradlew در آن قرار دارد
-          GRADLEW_PATH=$(find . -name "gradlew" -type f | head -n 1)
-          if [ -z "$GRADLEW_PATH" ]; then
-            echo "Error: gradlew not found!"
+          echo "=== List of all files extracted ==="
+          find . -maxdepth 3 -not -path '*/.*'
+          
+          # بررسی وجود gradlew
+          if [ ! -f "stage57work/gradlew" ] && [ ! -f "gradlew" ]; then
+            echo "❌ خطا: فایل gradlew داخل فایل زیپ وجود ندارد! این فایل زیپ سورس کامل ساخت مد نیست."
             exit 1
           fi
+          
+          GRADLEW_PATH=$(find . -name "gradlew" -type f | head -n 1)
           PROJECT_DIR=$(dirname "$GRADLEW_PATH")
-          echo "Found project directory at: $PROJECT_DIR"
           cd "$PROJECT_DIR"
           chmod +x gradlew
           ./gradlew build --stacktrace

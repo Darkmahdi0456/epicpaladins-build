@@ -11,33 +11,35 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Check Zip Contents
+      - name: Check Zip Contents and Build
         run: |
-          echo "=== لیست تمام فایل‌های موجود در مخزن ==="
+          echo "=== لیست فایل‌های موجود در مخزن ==="
           ls -la
           
-          # پیدا کردن فایل زیپ با هر نامی که با EpicPaladins شروع شود
-          ZIP_FILE=$(find . -maxdepth 1 -name "*EpicPaladins*.zip" | head -n 1)
+          ZIP_FILE="EpicPaladins-Fabric-1.21.4-final-stage77.zip"
           
-          if [ -z "$ZIP_FILE" ]; then
-            echo "❌ خطا: هیچ فایل زیپی با نام EpicPaladins پیدا نشد!"
+          if [ ! -f "$ZIP_FILE" ]; then
+            echo "❌ خطا: فایل $ZIP_FILE پیدا نشد!"
             exit 1
           fi
           
-          echo "موفق شدم فایل زیپ را پیدا کنم: $ZIP_FILE"
+          echo "موفق شدم فایل زیپ را پیدا کنم. در حال استخراج..."
           unzip -o "$ZIP_FILE" -d extracted_project
           
-          echo "=== لیست فایل‌های استخراج شده ==="
+          echo "=== لیست پوشه‌ها و فایل‌های استخراج شده ==="
           find extracted_project -maxdepth 3
           
+          # پیدا کردن مسیر دقیق gradlew در پوشه استخراج شده
           GRADLEW_PATH=$(find extracted_project -name "gradlew" -type f | head -n 1)
           if [ -z "$GRADLEW_PATH" ]; then
-            echo "❌ خطا: فایل gradlew داخل فایل زیپ پیدا نشد!"
+            echo "❌ خطا: فایل gradlew داخل پروژه پیدا نشد!"
             exit 1
           fi
           
           PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+          echo "مسیر پروژه پیدا شد: $PROJECT_DIR"
           cd "$PROJECT_DIR"
+          
           chmod +x gradlew
           ./gradlew build --stacktrace
       - name: Upload Jar
@@ -45,3 +47,4 @@ jobs:
         with:
           name: EpicPaladins-Mod
           path: "**/build/libs/*.jar"
+

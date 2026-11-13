@@ -20,14 +20,18 @@ jobs:
           distribution: 'temurin'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: |
+          cd stage57work
+          chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: |
+          cd stage57work
+          ./gradlew build
 
       - name: Upload Build Artifact (.jar)
         uses: actions/upload-artifact@v4
         with:
           name: epic-paladins-jar
-          path: build/libs/*.jar
+          path: "**/build/libs/*.jar"
           

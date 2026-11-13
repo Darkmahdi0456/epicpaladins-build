@@ -13,41 +13,25 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           
-      - name: Extract and Build Project
+      - name: Extract and Build
         run: |
-          echo "=== لیست فایل‌ها در پوشه اصلی ==="
+          echo "=== ۱. بررسی فایل‌های پوشه روت ==="
           ls -la
           
-          ZIP_FILE="EpicPaladins-Fabric-1.21.4-final-stage77.zip"
+          echo "=== ۲. باز کردن فایل زیپ ==="
+          unzip -o EpicPaladins-Fabric-1.21.4-final-stage77.zip -d extracted_folder
           
-          if [ ! -f "$ZIP_FILE" ]; then
-            echo "❌ خطا: فایل زیپ پیدا نشد!"
-            exit 1
-          fi
+          echo "=== ۳. لیست محتویات استخراج شده ==="
+          ls -la extracted_folder
+          ls -la extracted_folder/stage57work
           
-          echo "در حال استخراج فایل زیپ..."
-          unzip -o "$ZIP_FILE" -d extracted_project
-          
-          # ورود خودکار به پوشه stage57work داخل فایل زیپ
-          if [ -d "extracted_project/stage57work" ]; then
-            cd extracted_project/stage57work
-          else
-            GRADLEW_PATH=$(find extracted_project -name "gradlew" -type f | head -n 1)
-            PROJECT_DIR=$(dirname "$GRADLEW_PATH")
-            cd "$PROJECT_DIR"
-          fi
-          
-          echo "پوشه کاری فعلی: $(pwd)"
-          
-          if [ ! -f "gradlew" ]; then
-            echo "❌ خطا: فایل gradlew پیدا نشد!"
-            exit 1
-          fi
+          echo "=== ۴. رفتن به پوشه پروژه و بیلد ==="
+          cd extracted_folder/stage57work
           
           chmod +x gradlew
           ./gradlew build --stacktrace
-          
-      - name: Upload Jar Artifact
+
+      - name: Upload Jar
         uses: actions/upload-artifact@v4
         with:
           name: EpicPaladins-Mod-Output

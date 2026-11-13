@@ -1,35 +1,30 @@
-name: Build Fabric Mod
-on: [workflow_dispatch, push]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-      - name: Check Zip Contents
-        run: |
-          unzip -o EpicPaladins-Fabric-*.zip
-          echo "=== List of all files extracted ==="
-          find . -maxdepth 3 -not -path '*/.*'
-          
-          # بررسی وجود gradlew
-          if [ ! -f "stage57work/gradlew" ] && [ ! -f "gradlew" ]; then
-            echo "❌ خطا: فایل gradlew داخل فایل زیپ وجود ندارد! این فایل زیپ سورس کامل ساخت مد نیست."
-            exit 1
-          fi
-          
-          GRADLEW_PATH=$(find . -name "gradlew" -type f | head -n 1)
-          PROJECT_DIR=$(dirname "$GRADLEW_PATH")
-          cd "$PROJECT_DIR"
-          chmod +x gradlew
-          ./gradlew build --stacktrace
-      - name: Upload Jar
-        uses: actions/upload-artifact@v4
-        with:
-          name: EpicPaladins-Mod
-          path: "**/build/libs/*.jar"
+    - name: Check Zip Contents
+      run: |
+        echo "=== Checking available files ==="
+        ls -la
+        
+        # پیدا کردن فایل زیپ پروژه به صورت خودکار
+        ZIP_FILE=$(find . -maxdepth 1 -name "EpicPaladins-Fabric-*.zip" | head -n 1)
+        
+        if [ -z "$ZIP_FILE" ]; then
+          echo "❌ خطا: فایل زیپ پیدا نشد! نام فایل را بررسی کنید."
+          exit 1
+        fi
+        
+        echo "Found zip: $ZIP_FILE"
+        unzip -o "$ZIP_FILE" -d extracted_project
+        
+        echo "=== List of extracted files ==="
+        find extracted_project -maxdepth 3
+        
+        # پیدا کردن مسیر درست gradw
+        GRADLEW_PATH=$(find extracted_project -name "gradw" -o -name "gradlew" | head -n 1)
+        if [ -z "$GRADLEW_PATH" ]; then
+          echo "❌ خطا: فایل gradlew داخل فایل زیپ پیدا نشد!"
+          exit 1
+        fi
+        
+        PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+        cd "$PROJECT_DIR"
+        chmod +x gradlew
+        ./gradlew build --stacktrace

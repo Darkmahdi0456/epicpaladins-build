@@ -11,16 +11,18 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Build Mod
+      - name: Extract and Find Gradle
         run: |
           unzip -o EpicPaladins-Fabric-*.zip
-          cd stage57work
-          # اگر پوشه پروژه اصلی یک لایه پایین‌تر بود، خودکار واردش میشه
-          if [ -d "EpicPaladins-Fabric-1.21.4" ]; then
-            cd EpicPaladins-Fabric-1.21.4
-          elif [ -d "fabric" ]; then
-            cd fabric
+          # پیدا کردن خودکار پوشه‌ای که gradlew در آن قرار دارد
+          GRADLEW_PATH=$(find . -name "gradlew" -type f | head -n 1)
+          if [ -z "$GRADLEW_PATH" ]; then
+            echo "Error: gradlew not found!"
+            exit 1
           fi
+          PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+          echo "Found project directory at: $PROJECT_DIR"
+          cd "$PROJECT_DIR"
           chmod +x gradlew
           ./gradlew build --stacktrace
       - name: Upload Jar

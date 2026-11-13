@@ -15,10 +15,16 @@ jobs:
         run: |
           unzip -o EpicPaladins-Fabric-*.zip
           cd stage57work
+          # اگر پوشه پروژه اصلی یک لایه پایین‌تر بود، خودکار واردش میشه
+          if [ -d "EpicPaladins-Fabric-1.21.4" ]; then
+            cd EpicPaladins-Fabric-1.21.4
+          elif [ -d "fabric" ]; then
+            cd fabric
+          fi
           chmod +x gradlew
           ./gradlew build --stacktrace
       - name: Upload Jar
         uses: actions/upload-artifact@v4
         with:
           name: EpicPaladins-Mod
-          path: "stage57work/build/libs/*.jar"
+          path: "**/build/libs/*.jar"

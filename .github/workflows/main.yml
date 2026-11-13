@@ -1,5 +1,5 @@
-    - name: Check Zip Contents
-      run: |
+ name: Check Zip Contents
+   run: |
         echo "=== Checking available files ==="
         ls -la
         

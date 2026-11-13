@@ -6,45 +6,50 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Check Zip Contents and Build
+          
+      - name: Extract and Build Project
         run: |
-          echo "=== لیست فایل‌های موجود در مخزن ==="
+          echo "=== لیست فایل‌ها در پوشه اصلی ==="
           ls -la
           
           ZIP_FILE="EpicPaladins-Fabric-1.21.4-final-stage77.zip"
           
           if [ ! -f "$ZIP_FILE" ]; then
-            echo "❌ خطا: فایل $ZIP_FILE پیدا نشد!"
+            echo "❌ خطا: فایل زیپ پیدا نشد!"
             exit 1
           fi
           
-          echo "موفق شدم فایل زیپ را پیدا کنم. در حال استخراج..."
+          echo "در حال استخراج فایل زیپ..."
           unzip -o "$ZIP_FILE" -d extracted_project
           
-          echo "=== لیست پوشه‌ها و فایل‌های استخراج شده ==="
-          find extracted_project -maxdepth 3
-          
-          # پیدا کردن مسیر دقیق gradlew در پوشه استخراج شده
-          GRADLEW_PATH=$(find extracted_project -name "gradlew" -type f | head -n 1)
-          if [ -z "$GRADLEW_PATH" ]; then
-            echo "❌ خطا: فایل gradlew داخل پروژه پیدا نشد!"
-            exit 1
+          # ورود خودکار به پوشه stage57work داخل فایل زیپ
+          if [ -d "extracted_project/stage57work" ]; then
+            cd extracted_project/stage57work
+          else
+            GRADLEW_PATH=$(find extracted_project -name "gradlew" -type f | head -n 1)
+            PROJECT_DIR=$(dirname "$GRADLEW_PATH")
+            cd "$PROJECT_DIR"
           fi
           
-          PROJECT_DIR=$(dirname "$GRADLEW_PATH")
-          echo "مسیر پروژه پیدا شد: $PROJECT_DIR"
-          cd "$PROJECT_DIR"
+          echo "پوشه کاری فعلی: $(pwd)"
+          
+          if [ ! -f "gradlew" ]; then
+            echo "❌ خطا: فایل gradlew پیدا نشد!"
+            exit 1
+          fi
           
           chmod +x gradlew
           ./gradlew build --stacktrace
-      - name: Upload Jar
+          
+      - name: Upload Jar Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: EpicPaladins-Mod
+          name: EpicPaladins-Mod-Output
           path: "**/build/libs/*.jar"
-
+          

@@ -14,8 +14,10 @@ jobs:
       - name: Build Mod
         run: |
           unzip -o EpicPaladins-Fabric-*.zip
-          DIR=$(ls -d */ | grep work | head -n 1)
-          cd "$DIR"
+          # پیدا کردن پوشه‌ای که gradlew در آن وجود دارد
+          PROJECT_DIR=$(find . -name "gradlew" -exec dirname {} \;)
+          echo "Found gradlew in: $PROJECT_DIR"
+          cd "$PROJECT_DIR"
           chmod +x gradlew
           ./gradlew build --stacktrace
       - name: Upload Jar
@@ -23,3 +25,4 @@ jobs:
         with:
           name: EpicPaladins-Mod
           path: "**/build/libs/*.jar"
+          

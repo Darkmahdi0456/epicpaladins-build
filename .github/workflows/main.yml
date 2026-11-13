@@ -11,15 +11,14 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: List files and Build
+      - name: Build Mod
         run: |
-          ls -la
           unzip -o EpicPaladins-Fabric-*.zip
-          cd stage57work
+          cd stage57work || cd *work* || true
           chmod +x gradlew
           ./gradlew build
       - name: Upload Jar
         uses: actions/upload-artifact@v4
         with:
           name: EpicPaladins-Mod
-          path: stage57work/build/libs/*.jar
+          path: "**/build/libs/*.jar"

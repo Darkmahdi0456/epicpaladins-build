@@ -14,7 +14,10 @@ jobs:
       - name: Build Mod
         run: |
           unzip -o EpicPaladins-Fabric-*.zip
-          cd stage57work || cd *work* || true
+          TARGET_DIR=$(find . -maxdepth 2 -type d -name "*work*" | head -n 1)
+          if [ -z "$TARGET_DIR" ]; then TARGET_DIR="."; fi
+          echo "Entering directory: $TARGET_DIR"
+          cd "$TARGET_DIR"
           chmod +x gradlew
           ./gradlew build
       - name: Upload Jar
@@ -22,3 +25,4 @@ jobs:
         with:
           name: EpicPaladins-Mod
           path: "**/build/libs/*.jar"
+          

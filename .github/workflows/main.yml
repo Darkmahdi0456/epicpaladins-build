@@ -1,4 +1,4 @@
-name: Build Fabric Mod
+name: Simple Save Mod
 on: [workflow_dispatch, push]
 
 jobs:
@@ -6,34 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-          
-      - name: Extract and Build
-        run: |
-          echo "=== ۱. بررسی فایل‌های پوشه روت ==="
-          ls -la
-          
-          echo "=== ۲. باز کردن فایل زیپ ==="
-          unzip -o EpicPaladins-Fabric-1.21.4-final-stage77.zip -d extracted_folder
-          
-          echo "=== ۳. لیست محتویات استخراج شده ==="
-          ls -la extracted_folder
-          ls -la extracted_folder/stage57work
-          
-          echo "=== ۴. رفتن به پوشه پروژه و بیلد ==="
-          cd extracted_folder/stage57work
-          
-          chmod +x gradlew
-          ./gradlew build --stacktrace
-
-      - name: Upload Jar
+      - name: Upload Zip directly
         uses: actions/upload-artifact@v4
         with:
-          name: EpicPaladins-Mod-Output
-          path: "**/build/libs/*.jar"
+          name: EpicPaladins-Project-Files
+          path: "EpicPaladins-Fabric-1.21.4-final-stage77.zip"
           

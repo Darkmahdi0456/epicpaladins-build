@@ -1,0 +1,7 @@
+Recipe files: 104
+minecraft:blasting: 1
+minecraft:crafting_shaped: 30
+minecraft:crafting_shapeless: 7
+minecraft:smelting: 5
+minecraft:smithing_transform: 61
+Errors: 0

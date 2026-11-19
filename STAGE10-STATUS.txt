@@ -1,0 +1,2 @@
+Stage 10 completed: corrected armor material mapping and recovered defense/toughness/knockback values from original bytecode.
+This is research only. No Fabric armor implementation, successful Gradle build, or in-game test is claimed.

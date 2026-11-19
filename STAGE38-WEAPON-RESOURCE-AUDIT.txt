@@ -1,0 +1,4 @@
+Weapon models checked: 3
+Model JSON valid: 3
+Textures present: 3
+Animation resources: all three original GeoModel methods return null

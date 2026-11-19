@@ -1,0 +1,4 @@
+8 original armor material definitions checked: PASS
+Durability factor: 20 for all 8
+Equip sound: diamond
+Sculk repair ingredient: minecraft:echo_shard

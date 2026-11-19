@@ -1,0 +1,5 @@
+1. Read the static initializer and correlate each registry field with its lambda method.
+2. Extract defense map by armor slot, enchantability, equip sound, repair ingredient, toughness, knockback resistance.
+3. Extract tool tier mining level, durability, mining speed, attack bonus, enchantability, repair ingredient.
+4. Implement Fabric-native material/tier definitions.
+5. Compile and fix API/mapping errors before packaging a test JAR.

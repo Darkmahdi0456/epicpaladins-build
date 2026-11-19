@@ -1,0 +1,6 @@
+Minecraft 1.21.4 equipment asset audit
+10/10 registered material asset IDs have matching JSON files.
+10/10 include humanoid and humanoid_leggings layers.
+Fallback texture: minecraft:diamond (temporary).
+Geo armor rendering: NOT IMPLEMENTED.
+Gradle build/game test: NOT RUN.

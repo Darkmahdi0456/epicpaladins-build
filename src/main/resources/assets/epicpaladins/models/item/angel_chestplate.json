@@ -1,0 +1,6 @@
+{
+  "parent": "builtin/entity",
+  "textures": {
+    "particle": "epicpaladins:item/angel_chestplate"
+  }
+}

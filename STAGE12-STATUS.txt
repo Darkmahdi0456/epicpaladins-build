@@ -1,0 +1,1 @@
+Stage 12: static registry ID audit added. No duplicate IDs or item/block collisions. Not compiled; not an installable mod.

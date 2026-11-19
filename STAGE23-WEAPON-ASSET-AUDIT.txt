@@ -1,0 +1,8 @@
+angel_sword: JSON OK; geometries=1; bones=3; cubes=18
+cryorium_axe: JSON OK; geometries=1; bones=3; cubes=15
+moonlight_glaive: JSON OK; geometries=1; bones=3; cubes=15
+angel_sword item texture: FOUND
+cryorium_axe item texture: FOUND
+moonlight_glaive item texture: FOUND
+arclight_axe item texture: FOUND
+bloodstone_axe item texture: FOUND

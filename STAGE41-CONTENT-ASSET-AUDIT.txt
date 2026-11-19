@@ -1,0 +1,15 @@
+- Registered item IDs in source: 84 (unique: 84)
+- Registered block IDs in source: 14 (unique: 14)
+- English localization keys: 105
+- Item model files: 98
+- Item texture files: 84
+- Block model files: 14
+- Block model texture references checked: 14
+- Missing registered-content requirements: 0
+- Missing block texture references: 0
+
+## Result
+All 84 registered item IDs have English localization, item model, and item texture files; all 14 registered block IDs have English localization and block model files. All 14 concrete block texture references resolve to existing PNG files.
+
+## Scope limitation
+This is a static resource consistency audit. It does not prove that the Java registry code compiles, that the models render correctly in Minecraft, or that gameplay behavior matches the original NeoForge mod.

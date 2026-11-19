@@ -1,0 +1,2 @@
+Stage 15 source pass complete: 8 armor sets / 32 wearable item registrations added.
+Not compiled or tested. Not ready to place in the mods folder.

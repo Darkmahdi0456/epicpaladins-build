@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "epicpaladins:angel_feather"
+  },
+  "base": {
+    "item": "epicpaladins:arclight_leggings"
+  },
+  "result": {
+    "id": "epicpaladins:angel_leggings"
+  },
+  "template": {
+    "item": "epicpaladins:arclight_template"
+  }
+}

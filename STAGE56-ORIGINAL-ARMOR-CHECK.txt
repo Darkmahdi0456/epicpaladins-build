@@ -1,0 +1,6 @@
+PASS: original JAR contains 9 armor item classes.
+PASS: Fabric registry contains the same 9 sets.
+PASS: Geo armor manifest contains the same 9 sets.
+PASS: Steel remains a material/content item and is not registered as a fabricated armor set.
+Build status: NOT RUN.
+In-game rendering status: NOT TESTED.

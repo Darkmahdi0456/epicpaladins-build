@@ -1,0 +1,13 @@
+PASS | GeoArmorItem implements GeoItem
+PASS | Geo renderer provider implemented
+PASS | Renderer lazily cached
+PASS | Renderer prepared for each armor render
+PASS | Animatable cache exposed
+PASS | Armor renderer is client-only
+PASS | Armor model is client-only
+PASS | Renderer uses set-specific model
+PASS | Model resolves geometry and texture
+PASS | All nine sets registered
+PASS | 36 special item definitions exist
+PASS | All special item definitions are valid JSON
+SUMMARY: 12/12 passed

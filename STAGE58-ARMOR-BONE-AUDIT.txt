@@ -1,0 +1,11 @@
+Armor geo files: 9
+angel_armor.geo.json: bones=20; missing=[]; unnamed-decoration-bones=['bone', 'bone10', 'bone11', 'bone2', 'bone3', 'bone4', 'bone5', 'bone6', 'bone7', 'bone8', 'bone9']
+arclight_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+assassin_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+bloodstone_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+cryorium_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+jade_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+knight_armor.geo.json: bones=20; missing=[]; unnamed-decoration-bones=['bone', 'bone2', 'bone3', 'bone4', 'bone5', 'bone6']
+moonlight_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+sculk_armor.geo.json: bones=14; missing=[]; unnamed-decoration-bones=[]
+PASS: all nine models contain the eight core armor bone names

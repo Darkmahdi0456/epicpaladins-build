@@ -1,0 +1,6 @@
+Epic Paladins weapon Geo asset audit
+Scope: static file/JSON checks only; no Fabric renderer or runtime test.
+- Angel Sword: checked
+- Cryorium Axe: checked
+- Moonlight Glaive: checked
+Errors: 0

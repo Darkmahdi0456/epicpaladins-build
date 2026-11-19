@@ -1,0 +1,14 @@
+Epic Paladins armor render readiness audit
+
+angel: JSON OK; format=1.12.0; geometries=1; bones=20; texture=angel_armor_textures.png, angel_armor.png
+arclight: JSON OK; format=1.12.0; geometries=1; bones=14; texture=arclight_armor_textures.png
+assassin: JSON OK; format=1.12.0; geometries=1; bones=14; texture=assassin_armor_textures.png
+bloodstone: JSON OK; format=1.12.0; geometries=1; bones=14; texture=bloodstone_armor_textures.png
+cryorium: JSON OK; format=1.12.0; geometries=1; bones=14; texture=cryorium_armor_textures.png
+jade: JSON OK; format=1.12.0; geometries=1; bones=14; texture=jade_armor_textures.png
+knight: JSON OK; format=1.12.0; geometries=1; bones=20; texture=knight_armor_textures.png
+moonlight: JSON OK; format=1.12.0; geometries=1; bones=14; texture=moonlight_armor_textures.png
+sculk: JSON OK; format=1.12.0; geometries=1; bones=14; texture=sculk_armor_textures.png
+
+Models checked: 9
+Problems: 0

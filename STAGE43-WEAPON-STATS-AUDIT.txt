@@ -1,0 +1,6 @@
+Stage 43: original special-weapon registration values
+Angel Sword: Netherite tier; SwordItem.createAttributes(NETHERITE, 10, -2.1F); EPIC rarity.
+Moonlight Glaive: Netherite tier; SwordItem.createAttributes(NETHERITE, 10, -2.5F); EPIC rarity.
+Cryorium Battle Axe: Netherite tier; AxeItem.createAttributes(NETHERITE, 12.0F, -3.0F); EPIC rarity.
+Important: CryoriumAxeItem still extends SwordItem in the original class, despite using AxeItem.createAttributes.
+All values were read from original jar bytecode. This is an audit, not a completed implementation or game test.

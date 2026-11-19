@@ -1,0 +1,14 @@
+Epic Paladins Stage 47 - Armor asset audit
+
+angel_armor: valid JSON; geometries=1; bones=20; texture=textures/armor/angel_armor_textures.png
+arclight_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/arclight_armor_textures.png
+assassin_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/assassin_armor_textures.png
+bloodstone_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/bloodstone_armor_textures.png
+cryorium_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/cryorium_armor_textures.png
+jade_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/jade_armor_textures.png
+knight_armor: valid JSON; geometries=1; bones=20; texture=textures/armor/knight_armor_textures.png
+moonlight_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/moonlight_armor_textures.png
+sculk_armor: valid JSON; geometries=1; bones=14; texture=textures/armor/sculk_armor_textures.png
+
+Model files checked: 9
+Missing matching textures: 0

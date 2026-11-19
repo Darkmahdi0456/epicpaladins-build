@@ -1,0 +1,1 @@
+PASS: 10 armor repair tags; every project item is registered and vanilla echo_shard is recognized.

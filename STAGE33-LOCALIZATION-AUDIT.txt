@@ -1,0 +1,15 @@
+Registered item IDs scanned: 84
+Registered block IDs scanned: 14
+Expected English keys: 99
+Existing English keys: 105
+Missing keys: 0
+
+Extra English keys: 6
+
+EXTRA:
+angelarmor.chestplate
+angelarmor.tooltip
+itemGroup.item.epicpaladins
+itemGroup.items.epicpaladins
+tooltip.epicpaladins.sculk_helmet
+tooltip.epicpaladins.sculk_leggings

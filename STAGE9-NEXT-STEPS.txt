@@ -1,0 +1,1 @@
+Next: extract complete per-slot defense maps and repair ingredients from ArmorMaterialsRegistry.javap.txt; then implement Yarn 1.21.4 ArmorMaterial + ArmorItem registrations. Do not install this workspace as a mod.

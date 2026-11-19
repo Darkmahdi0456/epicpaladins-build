@@ -1,0 +1,10 @@
+PASS: 9 armor geometry/texture pairs exist and parse.
+arclight: id=geometry.arclightpaladin; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+angel: id=geometry.angel_armor; bones=20; SCALE/UV REVIEW (geo (256, 256), png (512, 512))
+assassin: id=geometry.steel_armor; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+bloodstone: id=geometry.scorpion; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+cryorium: id=geometry.unknown; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+jade: id=geometry.unknown; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+knight: id=geometry.unknown; bones=20; SCALE/UV REVIEW (geo (88, 88), png (176, 176))
+moonlight: id=geometry.moonlight; bones=14; SCALE/UV REVIEW (geo (128, 128), png (256, 256))
+sculk: id=geometry.unknown; bones=14; SCALE/UV REVIEW (geo (64, 64), png (128, 128))

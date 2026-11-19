@@ -1,0 +1,2 @@
+Armor sets in manifest: 9
+Missing/invalid references: 0

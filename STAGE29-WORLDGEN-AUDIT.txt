@@ -1,0 +1,8 @@
+Configured ores: 5
+- arclight_ore: size=9; blocks=arclight_ore, deepslate_arclight_ore
+- bloodstone_ore: size=9; blocks=bloodstone_ore, deepslate_bloodstone_ore
+- cryorium_ore: size=9; blocks=cryorium_ore, deepslate_cryorium_ore
+- jade_ore: size=9; blocks=jade_ore
+- moonlight_ore: size=9; blocks=moonlight_ore
+Placed features: 5
+NeoForge biome modifiers (not Fabric hooks): 5

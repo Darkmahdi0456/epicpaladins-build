@@ -1,0 +1,1 @@
+Stage 16 source update: Assassin/Knight armor registration coverage added. Not compiled or tested.

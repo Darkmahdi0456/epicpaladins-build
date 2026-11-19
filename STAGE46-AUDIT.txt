@@ -1,0 +1,11 @@
+Epic Paladins Stage 46
+GeckoLib renderer readiness audit
+
+EpicWeaponItem extends vanilla Item only.
+No GeoItem/GeoAnimatable implementation found.
+No GeckoLib animation cache/provider methods found.
+No Fabric client entrypoint found.
+No client renderer registration found.
+Build dependency and fabric.mod.json runtime requirement both declare GeckoLib 4.8.
+
+Result: renderer is NOT connected. Do not install this development project as a playable mod.

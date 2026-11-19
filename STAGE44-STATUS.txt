@@ -1,0 +1,1 @@
+Stage 44: Added exact audited attack modifiers, Epic rarity, and Netherite-baseline durability to the three special weapon registrations. Not compiled or tested in-game.

@@ -1,0 +1,615 @@
+Compiled from "ArmorMaterialsRegistry.java"
+public class net.veroxuniverse.epicpaladins.common.registries.items.ArmorMaterialsRegistry {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.world.item.ArmorMaterial> ARMOR_MATERIALS;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> ARCLIGHT;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> ANGEL;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> CRYORIUM;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> JADE;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> MOONLIGHT;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> BLOODSTONE;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> SCULK;
+
+  public static net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.ArmorMaterial, net.minecraft.world.item.ArmorMaterial> STEEL;
+
+  public net.veroxuniverse.epicpaladins.common.registries.items.ArmorMaterialsRegistry();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void register(net.neoforged.bus.api.IEventBus);
+    Code:
+       0: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+       3: aload_0
+       4: invokevirtual #13                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Lnet/neoforged/bus/api/IEventBus;)V
+       7: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$23();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #28,  0             // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #46,  0             // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #56                 // String steel
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #73                 // float 1.5f
+      53: ldc           #74                 // float 0.2f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$22();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #80                 // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.STEEL_INGOT:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$21(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_3
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: iconst_4
+      17: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      20: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      23: pop
+      24: aload_0
+      25: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      28: bipush        6
+      30: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      33: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      36: pop
+      37: aload_0
+      38: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      41: iconst_3
+      42: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      45: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      48: pop
+      49: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$20();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #119,  0            // InvokeDynamic #2:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #120,  0            // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #121                // String sculk
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #123                // float 5.0f
+      53: ldc           #124                // float 0.1f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$19();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #125                // Field net/minecraft/world/item/Items.ECHO_SHARD:Lnet/minecraft/world/item/Item;
+       9: aastore
+      10: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      13: areturn
+
+  private static void lambda$static$18(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: bipush        6
+       6: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       9: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      12: pop
+      13: aload_0
+      14: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      17: bipush        8
+      19: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      22: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      25: pop
+      26: aload_0
+      27: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      30: bipush        9
+      32: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      35: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      38: pop
+      39: aload_0
+      40: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      43: iconst_5
+      44: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      47: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      50: pop
+      51: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$17();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #131,  0            // InvokeDynamic #4:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #132,  0            // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #133                // String bloodstone
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #135                // float 4.0f
+      53: ldc           #136                // float 0.3f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$16();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #137                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.BLOODSTONE_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$15(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_5
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: bipush        8
+      18: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      21: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      24: pop
+      25: aload_0
+      26: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      29: bipush        10
+      31: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      34: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      42: iconst_5
+      43: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      46: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$14();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #140,  0            // InvokeDynamic #6:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #141,  0            // InvokeDynamic #7:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #142                // String moonlight
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #144                // float 4.5f
+      53: ldc           #124                // float 0.1f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$13();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #145                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.MOONLIGHT_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$12(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_5
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: bipush        8
+      18: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      21: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      24: pop
+      25: aload_0
+      26: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      29: bipush        10
+      31: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      34: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      42: iconst_5
+      43: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      46: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$11();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #148,  0            // InvokeDynamic #8:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #149,  0            // InvokeDynamic #9:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #150                // String jade
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #152                // float 3.5f
+      53: ldc           #153                // float 0.5f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$10();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #154                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.JADE_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$9(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_5
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: bipush        8
+      18: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      21: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      24: pop
+      25: aload_0
+      26: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      29: bipush        10
+      31: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      34: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      42: iconst_5
+      43: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      46: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$8();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #157,  0            // InvokeDynamic #10:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #158,  0            // InvokeDynamic #11:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #159                // String cryorium
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #135                // float 4.0f
+      53: ldc           #74                 // float 0.2f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$7();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #161                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.CRYORIUM_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$6(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_5
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: bipush        8
+      18: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      21: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      24: pop
+      25: aload_0
+      26: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      29: bipush        10
+      31: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      34: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      42: iconst_5
+      43: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      46: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$5();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #164,  0            // InvokeDynamic #12:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #165,  0            // InvokeDynamic #13:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #166                // String angel
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #123                // float 5.0f
+      53: ldc           #136                // float 0.3f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$4();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #168                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.ARCLIGHT_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$3(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: bipush        7
+       6: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       9: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      12: pop
+      13: aload_0
+      14: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      17: bipush        9
+      19: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      22: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      25: pop
+      26: aload_0
+      27: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      30: bipush        14
+      32: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      35: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      38: pop
+      39: aload_0
+      40: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      43: bipush        8
+      45: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      48: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      51: pop
+      52: return
+
+  private static net.minecraft.world.item.ArmorMaterial lambda$static$2();
+    Code:
+       0: new           #19                 // class net/minecraft/world/item/ArmorMaterial
+       3: dup
+       4: new           #21                 // class java/util/EnumMap
+       7: dup
+       8: ldc           #23                 // class net/minecraft/world/item/ArmorItem$Type
+      10: invokespecial #25                 // Method java/util/EnumMap."<init>":(Ljava/lang/Class;)V
+      13: invokedynamic #171,  0            // InvokeDynamic #14:accept:()Ljava/util/function/Consumer;
+      18: invokestatic  #32                 // Method net/minecraft/Util.make:(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      21: checkcast     #38                 // class java/util/Map
+      24: bipush        20
+      26: getstatic     #40                 // Field net/minecraft/sounds/SoundEvents.ARMOR_EQUIP_DIAMOND:Lnet/minecraft/core/Holder;
+      29: invokedynamic #172,  0            // InvokeDynamic #15:get:()Ljava/util/function/Supplier;
+      34: new           #50                 // class net/minecraft/world/item/ArmorMaterial$Layer
+      37: dup
+      38: ldc           #54                 // String epicpaladins
+      40: ldc           #173                // String arclight
+      42: invokestatic  #58                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      45: invokespecial #64                 // Method net/minecraft/world/item/ArmorMaterial$Layer."<init>":(Lnet/minecraft/resources/ResourceLocation;)V
+      48: invokestatic  #67                 // InterfaceMethod java/util/List.of:(Ljava/lang/Object;)Ljava/util/List;
+      51: ldc           #135                // float 4.0f
+      53: ldc           #74                 // float 0.2f
+      55: invokespecial #75                 // Method net/minecraft/world/item/ArmorMaterial."<init>":(Ljava/util/Map;ILnet/minecraft/core/Holder;Ljava/util/function/Supplier;Ljava/util/List;FF)V
+      58: areturn
+
+  private static net.minecraft.world.item.crafting.Ingredient lambda$static$1();
+    Code:
+       0: iconst_1
+       1: anewarray     #78                 // class net/minecraft/world/level/ItemLike
+       4: dup
+       5: iconst_0
+       6: getstatic     #168                // Field net/veroxuniverse/epicpaladins/common/registries/ItemsRegistry.ARCLIGHT_GEM:Lnet/neoforged/neoforge/registries/DeferredItem;
+       9: invokevirtual #86                 // Method net/neoforged/neoforge/registries/DeferredItem.get:()Ljava/lang/Object;
+      12: checkcast     #78                 // class net/minecraft/world/level/ItemLike
+      15: aastore
+      16: invokestatic  #91                 // Method net/minecraft/world/item/crafting/Ingredient.of:([Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/item/crafting/Ingredient;
+      19: areturn
+
+  private static void lambda$static$0(java.util.EnumMap);
+    Code:
+       0: aload_0
+       1: getstatic     #96                 // Field net/minecraft/world/item/ArmorItem$Type.BOOTS:Lnet/minecraft/world/item/ArmorItem$Type;
+       4: iconst_5
+       5: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       8: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #110                // Field net/minecraft/world/item/ArmorItem$Type.LEGGINGS:Lnet/minecraft/world/item/ArmorItem$Type;
+      16: bipush        8
+      18: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      21: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      24: pop
+      25: aload_0
+      26: getstatic     #113                // Field net/minecraft/world/item/ArmorItem$Type.CHESTPLATE:Lnet/minecraft/world/item/ArmorItem$Type;
+      29: bipush        10
+      31: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      34: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #116                // Field net/minecraft/world/item/ArmorItem$Type.HELMET:Lnet/minecraft/world/item/ArmorItem$Type;
+      42: iconst_5
+      43: invokestatic  #100                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      46: invokevirtual #106                // Method java/util/EnumMap.put:(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: return
+
+  static {};
+    Code:
+       0: getstatic     #175                // Field net/minecraft/core/registries/Registries.ARMOR_MATERIAL:Lnet/minecraft/resources/ResourceKey;
+       3: ldc           #54                 // String epicpaladins
+       5: invokestatic  #181                // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       8: putstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      11: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      14: ldc           #173                // String arclight
+      16: invokedynamic #185,  0            // InvokeDynamic #16:get:()Ljava/util/function/Supplier;
+      21: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      24: putstatic     #189                // Field ARCLIGHT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      30: ldc           #166                // String angel
+      32: invokedynamic #193,  0            // InvokeDynamic #17:get:()Ljava/util/function/Supplier;
+      37: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      40: putstatic     #194                // Field ANGEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      43: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      46: ldc           #159                // String cryorium
+      48: invokedynamic #197,  0            // InvokeDynamic #18:get:()Ljava/util/function/Supplier;
+      53: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      56: putstatic     #198                // Field CRYORIUM:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      59: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      62: ldc           #150                // String jade
+      64: invokedynamic #201,  0            // InvokeDynamic #19:get:()Ljava/util/function/Supplier;
+      69: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      72: putstatic     #202                // Field JADE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      75: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      78: ldc           #142                // String moonlight
+      80: invokedynamic #205,  0            // InvokeDynamic #20:get:()Ljava/util/function/Supplier;
+      85: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      88: putstatic     #206                // Field MOONLIGHT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      91: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      94: ldc           #133                // String bloodstone
+      96: invokedynamic #209,  0            // InvokeDynamic #21:get:()Ljava/util/function/Supplier;
+     101: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     104: putstatic     #210                // Field BLOODSTONE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     107: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     110: ldc           #121                // String sculk
+     112: invokedynamic #213,  0            // InvokeDynamic #22:get:()Ljava/util/function/Supplier;
+     117: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     120: putstatic     #214                // Field SCULK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     123: getstatic     #7                  // Field ARMOR_MATERIALS:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     126: ldc           #56                 // String steel
+     128: invokedynamic #217,  0            // InvokeDynamic #23:get:()Ljava/util/function/Supplier;
+     133: invokevirtual #186                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     136: putstatic     #218                // Field STEEL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     139: return
+}

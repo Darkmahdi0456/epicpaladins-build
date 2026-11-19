@@ -1,0 +1,2 @@
+Stage 14 status: source scaffold added; NOT compiled; NOT game-tested; no installable JAR.
+Armor stats and repair ingredients are provisional. Do not install as a finished mod.

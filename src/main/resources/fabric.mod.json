@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "epicpaladins",
+  "version": "1.4.3-fabric-port-dev",
+  "name": "Epic Paladins (Fabric Port)",
+  "description": "Unofficial Fabric port work-in-progress. GeckoLib dependency aligned to Minecraft 1.21.4; content and rendering remain incomplete.",
+  "authors": [
+    "Bandit-Bytes",
+    "VeroxUniverse",
+    "Unofficial port work-in-progress"
+  ],
+  "license": "LGPL-3.0-or-later; verify original terms before redistribution",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.veroxuniverse.epicpaladins.fabric.EpicPaladinsFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*",
+    "geckolib": ">=4.8"
+  }
+}

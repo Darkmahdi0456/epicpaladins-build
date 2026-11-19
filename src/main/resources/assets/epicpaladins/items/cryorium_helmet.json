@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "epicpaladins:item/cryorium_helmet",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

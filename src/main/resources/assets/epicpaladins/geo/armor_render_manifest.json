@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "note": "Preparation manifest only. Geo armor rendering is not registered yet.",
+  "sets": {
+    "arclight": {"geometry": "epicpaladins:geo/arclight_armor.geo.json", "texture": "epicpaladins:textures/armor/arclight_armor_textures.png"},
+    "angel": {"geometry": "epicpaladins:geo/angel_armor.geo.json", "texture": "epicpaladins:textures/armor/angel_armor_textures.png"},
+    "assassin": {"geometry": "epicpaladins:geo/assassin_armor.geo.json", "texture": "epicpaladins:textures/armor/assassin_armor_textures.png"},
+    "bloodstone": {"geometry": "epicpaladins:geo/bloodstone_armor.geo.json", "texture": "epicpaladins:textures/armor/bloodstone_armor_textures.png"},
+    "cryorium": {"geometry": "epicpaladins:geo/cryorium_armor.geo.json", "texture": "epicpaladins:textures/armor/cryorium_armor_textures.png"},
+    "jade": {"geometry": "epicpaladins:geo/jade_armor.geo.json", "texture": "epicpaladins:textures/armor/jade_armor_textures.png"},
+    "knight": {"geometry": "epicpaladins:geo/knight_armor.geo.json", "texture": "epicpaladins:textures/armor/knight_armor_textures.png"},
+    "moonlight": {"geometry": "epicpaladins:geo/moonlight_armor.geo.json", "texture": "epicpaladins:textures/armor/moonlight_armor_textures.png"},
+    "sculk": {"geometry": "epicpaladins:geo/sculk_armor.geo.json", "texture": "epicpaladins:textures/armor/sculk_armor_textures.png"}
+  }
+}

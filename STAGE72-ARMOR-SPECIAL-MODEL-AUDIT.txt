@@ -1,0 +1,40 @@
+Stage 72 — armor special item model audit
+PASS 9 sets generate exactly 36 expected special item definitions
+PASS no unexpected special armor item definitions
+PASS angel_boots: special definition + base model
+PASS angel_chestplate: special definition + base model
+PASS angel_helmet: special definition + base model
+PASS angel_leggings: special definition + base model
+PASS arclight_boots: special definition + base model
+PASS arclight_chestplate: special definition + base model
+PASS arclight_helmet: special definition + base model
+PASS arclight_leggings: special definition + base model
+PASS assassin_boots: special definition + base model
+PASS assassin_chestplate: special definition + base model
+PASS assassin_helmet: special definition + base model
+PASS assassin_leggings: special definition + base model
+PASS bloodstone_boots: special definition + base model
+PASS bloodstone_chestplate: special definition + base model
+PASS bloodstone_helmet: special definition + base model
+PASS bloodstone_leggings: special definition + base model
+PASS cryorium_boots: special definition + base model
+PASS cryorium_chestplate: special definition + base model
+PASS cryorium_helmet: special definition + base model
+PASS cryorium_leggings: special definition + base model
+PASS jade_boots: special definition + base model
+PASS jade_chestplate: special definition + base model
+PASS jade_helmet: special definition + base model
+PASS jade_leggings: special definition + base model
+PASS knight_boots: special definition + base model
+PASS knight_chestplate: special definition + base model
+PASS knight_helmet: special definition + base model
+PASS knight_leggings: special definition + base model
+PASS moonlight_boots: special definition + base model
+PASS moonlight_chestplate: special definition + base model
+PASS moonlight_helmet: special definition + base model
+PASS moonlight_leggings: special definition + base model
+PASS sculk_boots: special definition + base model
+PASS sculk_chestplate: special definition + base model
+PASS sculk_helmet: special definition + base model
+PASS sculk_leggings: special definition + base model
+SUMMARY 38/38

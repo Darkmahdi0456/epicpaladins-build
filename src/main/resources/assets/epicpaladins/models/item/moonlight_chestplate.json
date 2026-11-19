@@ -1,0 +1,6 @@
+{
+  "parent": "builtin/entity",
+  "textures": {
+    "particle": "epicpaladins:item/moonlight_chestplate"
+  }
+}

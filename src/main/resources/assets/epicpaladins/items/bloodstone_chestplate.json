@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "epicpaladins:item/bloodstone_chestplate",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

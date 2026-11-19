@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "epicpaladins:item/assassin_leggings",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Item model JSON files: 98
+Local texture references checked: 83
+Errors: 0

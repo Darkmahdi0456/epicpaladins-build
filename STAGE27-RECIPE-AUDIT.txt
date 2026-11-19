@@ -1,0 +1,11 @@
+Recipe files found: 104
+Valid JSON recipes: 104
+Internal epicpaladins references: 195
+Potential missing asset references: 0
+Errors: 0
+
+Potential missing references:
+None detected by this limited asset check.
+
+JSON/type errors:
+None

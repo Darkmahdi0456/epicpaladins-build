@@ -1,0 +1,6 @@
+Minecraft: 1.21.4
+GeckoLib Fabric dependency: 4.8
+Previous dependency: 4.7.3 (not aligned with the 1.21.4 release noted in the release history)
+Runtime mod dependency: geckolib >=4.8
+Build/test status: NOT RUN
+Renderer implementation: NOT IMPLEMENTED

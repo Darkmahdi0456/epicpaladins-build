@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "epicpaladins:item/angel_helmet",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}

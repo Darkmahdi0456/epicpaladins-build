@@ -1,0 +1,5 @@
+Epic Paladins 1.21.4 Fabric — Stage 61
+Nine original armor Geo model/texture mappings centralized.
+Automated asset existence audit: PASS.
+Renderer registration: NOT YET IMPLEMENTED.
+Gradle build / in-game test: NOT RUN.

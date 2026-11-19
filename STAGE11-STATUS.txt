@@ -1,0 +1,4 @@
+Stage 11: armor specification record added.
+Not yet a Fabric ArmorMaterial registry.
+Not compiled; no installable JAR.
+Sculk repair ingredient still unconfirmed.

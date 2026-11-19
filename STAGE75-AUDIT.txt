@@ -1,0 +1,13 @@
+PASS | GeoItem implementation
+PASS | GeckoLib 1.21+ createGeoRenderer hook
+PASS | GeoRenderProvider override
+PASS | Renderer is lazily cached
+PASS | Renderer prepared for current equipment pass
+PASS | Animatable cache exposed
+PASS | Controller registration implemented
+PASS | Renderer is client-only
+PASS | Model is client-only
+PASS | Set-specific model and texture lookup
+PASS | 36 special item definitions
+PASS | 36 special definitions point to existing base models
+SUMMARY | 12/12 checks passed

@@ -1,0 +1,4 @@
+PASS: GeckoLib dependency is 4.8 for Fabric 1.21.4
+PASS: 9 armor model/texture pairs exist
+PASS: expected humanoid armor bones exist in every model
+NOT TESTED: Java compilation, renderer registration, in-game rendering

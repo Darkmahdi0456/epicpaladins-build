@@ -1,0 +1,148 @@
+{
+  "sets": [
+    {
+      "set": "arclight",
+      "geometry": "geo/arclight_armor.geo.json",
+      "texture": "textures/armor/arclight_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 157,
+      "geometry_identifier": "geometry.arclightpaladin"
+    },
+    {
+      "set": "angel",
+      "geometry": "geo/angel_armor.geo.json",
+      "texture": "textures/armor/angel_armor_textures.png",
+      "uv_size": [
+        256,
+        256
+      ],
+      "png_size": [
+        512,
+        512
+      ],
+      "bones": 20,
+      "cubes": 204,
+      "geometry_identifier": "geometry.angel_armor"
+    },
+    {
+      "set": "assassin",
+      "geometry": "geo/assassin_armor.geo.json",
+      "texture": "textures/armor/assassin_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 119,
+      "geometry_identifier": "geometry.steel_armor"
+    },
+    {
+      "set": "bloodstone",
+      "geometry": "geo/bloodstone_armor.geo.json",
+      "texture": "textures/armor/bloodstone_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 228,
+      "geometry_identifier": "geometry.scorpion"
+    },
+    {
+      "set": "cryorium",
+      "geometry": "geo/cryorium_armor.geo.json",
+      "texture": "textures/armor/cryorium_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 126,
+      "geometry_identifier": "geometry.unknown"
+    },
+    {
+      "set": "jade",
+      "geometry": "geo/jade_armor.geo.json",
+      "texture": "textures/armor/jade_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 93,
+      "geometry_identifier": "geometry.unknown"
+    },
+    {
+      "set": "knight",
+      "geometry": "geo/knight_armor.geo.json",
+      "texture": "textures/armor/knight_armor_textures.png",
+      "uv_size": [
+        88,
+        88
+      ],
+      "png_size": [
+        176,
+        176
+      ],
+      "bones": 20,
+      "cubes": 106,
+      "geometry_identifier": "geometry.unknown"
+    },
+    {
+      "set": "moonlight",
+      "geometry": "geo/moonlight_armor.geo.json",
+      "texture": "textures/armor/moonlight_armor_textures.png",
+      "uv_size": [
+        128,
+        128
+      ],
+      "png_size": [
+        256,
+        256
+      ],
+      "bones": 14,
+      "cubes": 81,
+      "geometry_identifier": "geometry.moonlight"
+    },
+    {
+      "set": "sculk",
+      "geometry": "geo/sculk_armor.geo.json",
+      "texture": "textures/armor/sculk_armor_textures.png",
+      "uv_size": [
+        64,
+        64
+      ],
+      "png_size": [
+        128,
+        128
+      ],
+      "bones": 14,
+      "cubes": 68,
+      "geometry_identifier": "geometry.unknown"
+    }
+  ]
+}

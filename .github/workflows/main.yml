@@ -1,0 +1,14 @@
+name: Simple Save Mod
+on: [workflow_dispatch, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload Zip directly
+        uses: actions/upload-artifact@v4
+        with:
+          name: EpicPaladins-Project-Files
+          path: "EpicPaladins-Fabric-1.21.4-final-stage77.zip"
+          
